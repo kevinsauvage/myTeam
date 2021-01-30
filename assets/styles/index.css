@@ -356,3 +356,68 @@ footer {
   margin-left: 16px;
   cursor: pointer;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home__sectionFirst-bg1 {
+    display: none;
+  }
+  .home__sectionFirst-text {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: inherit;
+  }
+  .home__sectionFirst-text > p {
+    font-size: 15px;
+    line-height: 28px;
+    width: 457px;
+  }
+  .home__sectionFirst-text > p::after {
+    display: none;
+  }
+  .home__sectionFirst-text > h1 {
+    font-size: 64px;
+  }
+  header {
+    top: 30px;
+    max-width: 680px;
+    left: 30px;
+    right: 30px;
+  }
+  .home__sectionSecond-text-container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .home__sectionSecond {
+    padding: 100px 0;
+  }
+  .home__sectionSecond-text-container > h2 {
+    font-size: 32px;
+    height: 100px;
+  }
+  .home__sectionThird-reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home__sectionThird-review > p {
+    width: 573px;
+  }
+  .home__sectionThird {
+    padding: 100px 0;
+    height: 1300px;
+  }
+  .home__sectionThird-text-container > h2 {
+    font-size: 32px;
+  }
+  .home__sectionFourth-text-container {
+    width: 573px;
+  }
+  .home__sectionFourth-text-container > h3 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+}
