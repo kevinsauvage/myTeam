@@ -147,6 +147,7 @@ header {
   font-weight: 800;
   z-index: 20;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 
 .about__team-btn:hover {
