@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./assets/styles/contact.css" />
+    <link rel="stylesheet" href="/assets/styles/general-style.css" />
+    <title>myTeam</title>
+  </head>
+  <body>
+    <section class="contact__sectionFirst">
+      <div class="contact__sectionFirst-wrapper">
+        <header>
+          <div class="header__left">
+            <img src="/assets/images/logo.svg" alt="logo photosnap" />
+            <nav>
+              <li><a href="/home.html">home</a></li>
+              <li><a href="/about.html">about</a></li>
+            </nav>
+          </div>
+          <div class="header__right">
+            <a href="/contact.html">contact us</a>
+          </div>
+        </header>
+        <div class="contact__sectionFirst-text-wrapper">
+          <div class="contact__sectionFirst-text">
+            <h1>contact</h1>
+            <h2>Ask us about</h2>
+            <div>
+              <div class="contact__sectionFirst-label">
+                <img src="./assets/images/icon-person.svg" alt="person" />
+                <p>The quality of our talent network</p>
+              </div>
+              <div class="contact__sectionFirst-label">
+                <img src="./assets/images/icon-cog.svg" alt="cog" />
+                <p>Usage & implementation of our software</p>
+              </div>
+              <div class="contact__sectionFirst-label">
+                <img src="./assets/images/icon-chart.svg" alt="chart" />
+                <p>How we help drive innovation Name</p>
+              </div>
+            </div>
+          </div>
+          <form  class="contact__sectionFirst-form" name="Form"  onSubmit="return submit()">
+            <div class="contact__sectionFirst-form-wrapper">
+              <label for="Eame">Full name</label>
+              <input type='name' name="Name" required autocomplete="off" autofocus>
+            </div>
+            <div class="contact__sectionFirst-form-wrapper">
+              <label for="Email">Email Address</label>
+              <input type="email" name="EMail" required  autocomplete="off">
+            </div>
+            <div class="contact__sectionFirst-form-wrapper">
+              <label for="company">Company name</label>
+              <input type="text" name="company"  autocomplete="off">
+            </div>
+            <div class="contact__sectionFirst-form-wrapper">
+              <label for="title">Title</label>
+              <input type="text" name="title"  autocomplete="off">
+            </div>
+            <div class="contact__sectionFirst-form-wrapper">
+              <label for="Message">Message</label>
+              <input type="text" name="Message" required  autocomplete="off">
+            </div>
+            <button class="submit-form-btn">submit</button>
+          </form>
+        </div>
+      </div>
+      <img
+        src="./assets/images/bg-pattern-about-2-contact-1.svg"
+        alt="bg home 1"
+        class="contact__sectionFirst-bg1"
+      />
+      <img
+        src="./assets/images/bg-pattern-contact-2.svg"
+        alt="bg home 1"
+        class="contact__sectionFirst-bg2"
+      />
+    </section>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <img src="/assets/images/logo.svg" alt="logo photosnap" />
+          <nav>
+            <li><a href="/index.html">home</a></li>
+            <li><a href="/about.html">about</a></li>
+          </nav>
+        </div>
+        <div class="footer__middle">
+          987 Hillcrest Lane </br>Irvine, CA </br>California
+          92714</br> Call Us : 949-833-7432
+        </div>
+        <div class="footer__right">
+          <div class="footer__right-icons-container">
+            <img src="./assets/images/icon-facebook.svg" alt="facebook icon">
+            <img src="./assets/images/icon-pinterest.svg" alt="pinterest icon">
+            <img src="./assets/images/icon-twitter.svg" alt="twitter icon">
+          </div>
+          <p>
+            Copyright 2020. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/formValidation.js"></script>
+</html>
