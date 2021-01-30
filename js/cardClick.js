@@ -3,9 +3,9 @@ const cardHover = document.querySelectorAll(".about__team-card-hover");
 
 function chngIcon(el) {
   if (el.src.split("/")[5] == "icon-cross.svg") {
-    el.src = "../assets/images/icon-close.svg";
+    el.src = "assets/images/icon-close.svg";
   } else {
-    el.src = "../assets/images/icon-cross.svg";
+    el.src = "assets/images/icon-cross.svg";
   }
 }
 
