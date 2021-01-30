@@ -2,16 +2,17 @@ const btns = document.querySelectorAll(".about__team-btn");
 const cardHover = document.querySelectorAll(".about__team-card-hover");
 
 function chngIcon(el) {
-  if (el.src.split("/")[5] == "icon-cross.svg") {
-    el.src = "assets/images/icon-close.svg";
+  console.log(el.children[0].style.transform !== "");
+  if (el.children[0].style.transform === "") {
+    el.children[0].style.transform = "rotate(45deg)";
   } else {
-    el.src = "assets/images/icon-cross.svg";
+    el.children[0].style.transform = "";
   }
 }
 
 const clickHandler = (e) => {
   e.currentTarget.nextElementSibling.classList.toggle("appear");
-  var el = e.currentTarget.children[0];
+  var el = e.currentTarget;
   chngIcon(el);
 };
 
