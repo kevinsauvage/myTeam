@@ -335,3 +335,72 @@ footer {
   margin-left: 16px;
   cursor: pointer;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    top: 30px;
+    max-width: 680px;
+    width: 680px;
+    right: 50%;
+    z-index: 50;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer__left {
+    width: 230px;
+  }
+  .footer__right {
+    width: 262px;
+  }
+  footer {
+    padding: 0px 80px;
+  }
+  .about__sectionFirst-text {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__sectionFirst-text > h1 {
+    width: unset;
+  }
+  .about__sectionFirst-text > p {
+    width: 540px;
+    text-align: center;
+  }
+  .about__sectionFirst-text > p::after {
+    display: none;
+  }
+  .about__team-wrapper {
+    display: flex;
+  }
+  .about__team-cards {
+    flex-wrap: wrap;
+  }
+  .about__team-card {
+    width: 281px;
+  }
+  .about__team-container > h2 {
+    font-size: 32px;
+  }
+  .about__sectionThird-client {
+    max-width: 689px;
+    width: 689px;
+  }
+  .about__sectionThird-client img {
+    height: 17px;
+  }
+  .about__sectionThird > h2 {
+    font-size: 32px;
+  }
+  .about__sectionFourth-text-container {
+    max-width: 573px;
+    width: 573px;
+  }
+  .about__sectionFourth-text-container > h3 {
+    font-size: 32px;
+  }
+  .about__sectionFourth-bg1 {
+    bottom: -20px;
+  }
+  .about__sectionFourth {
+    overflow: hidden;
+  }
+}
