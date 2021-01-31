@@ -199,3 +199,35 @@ footer {
   margin-left: 16px;
   cursor: pointer;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    top: 30px;
+    max-width: 680px;
+    width: 680px;
+    right: 50%;
+    z-index: 50;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer__left {
+    width: 230px;
+  }
+  .footer__right {
+    width: 262px;
+  }
+  footer {
+    padding: 0px 80px;
+  }
+  .contact__sectionFirst-text-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__sectionFirst-text {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .contact__sectionFirst-form > button {
+    margin-top: 20px;
+  }
+}
