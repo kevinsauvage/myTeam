@@ -2,7 +2,6 @@ const btns = document.querySelectorAll(".about__team-btn");
 const cardHover = document.querySelectorAll(".about__team-card-hover");
 
 function chngIcon(el) {
-  console.log(el.children[0].style.transform !== "");
   if (el.children[0].style.transform === "") {
     el.children[0].style.transform = "rotate(45deg)";
   } else {
