@@ -9,13 +9,13 @@ function ValidateForm(e) {
   var message = document.forms["Form"]["Message"];
 
   if (name.value == "") {
-    name.style.borderBottom = "1px solid red";
+    name.style.borderBottom = "1px solid #f67e7e";
     name.focus();
     return false;
   }
 
   if (email.value == "" || !validateEmail(email.value)) {
-    email.style.borderBottom = "1px solid red";
+    email.style.borderBottom = "1px solid #f67e7e";
     name.style.borderBottom = "1px solid white";
     email.focus();
     return false;
@@ -23,7 +23,7 @@ function ValidateForm(e) {
 
   if (message.value == "") {
     email.style.borderBottom = "1px solid white";
-    message.style.borderBottom = "1px solid red";
+    message.style.borderBottom = "1px solid #f67e7e";
     message.focus();
     return false;
   }
