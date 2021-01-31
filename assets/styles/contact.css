@@ -231,3 +231,107 @@ footer {
     margin-top: 20px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    align-items: center;
+    flex-direction: column;
+    top: 0px;
+    background-color: #2c6269;
+    height: 100vh;
+    justify-content: center;
+    z-index: 100;
+    left: unset;
+    right: -101%;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+  }
+  .header__left {
+    flex-direction: column;
+  }
+  .header__left > img {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+  }
+  .header__left > nav {
+    flex-direction: column;
+  }
+  .header__left > nav li {
+    margin: 16px 0;
+  }
+  .header__right {
+    margin: 31px 0;
+  }
+  .hamburger__menu {
+    display: inline;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 10;
+  }
+  .icon__hamburger-menu-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: inline;
+  }
+  .logo__small-screen {
+    position: absolute;
+    display: inline;
+    left: 10px;
+    top: 8px;
+  }
+  .contact__sectionFirst-text-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__sectionFirst-bg1 {
+    display: none;
+  }
+  .contact__sectionFirst-bg2 {
+    bottom: -100px;
+  }
+  .contact__sectionFirst-text {
+    width: 327px;
+  }
+  .contact__sectionFirst-wrapper {
+    height: 1132px;
+  }
+  .contact__sectionFirst-form {
+    width: 327px;
+    height: 420px;
+    margin: 50px 0;
+  }
+  .contact__sectionFirst-text > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .contact__sectionFirst-text > h2 {
+    text-align: center;
+  }
+  footer {
+    height: 432px;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__left > nav {
+    width: 100%;
+    justify-content: center;
+    margin: 24px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__left > nav li {
+    margin: 0 15px;
+  }
+  .footer__right {
+    align-items: center;
+  }
+  .footer__right-icons-container {
+    margin: 24px 0;
+  }
+}

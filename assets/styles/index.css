@@ -26,6 +26,9 @@ header {
 .hamburger__menu {
   display: none;
 }
+.icon__hamburger-menu-close {
+  display: none;
+}
 .logo__small-screen {
   display: none;
 }
@@ -493,6 +496,11 @@ footer {
   .header__left {
     flex-direction: column;
   }
+  .header__left > img {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+  }
   .header__left > nav {
     flex-direction: column;
   }
@@ -507,7 +515,13 @@ footer {
     position: absolute;
     right: 15px;
     top: 15px;
-    z-index: 150;
+    z-index: 10;
+  }
+  .icon__hamburger-menu-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: inline;
   }
   .logo__small-screen {
     position: absolute;
@@ -520,5 +534,90 @@ footer {
   }
   .home__sectionFirst-text > p::after {
     display: none;
+  }
+  .home__sectionSecond-text-container > h2 {
+    font-size: 32px;
+    height: 240px;
+    width: 240px;
+  }
+  .home__sectionSecond {
+    padding: 64px 24px;
+    height: 1073px;
+  }
+  .home__sectionSecond-text-container {
+    flex-direction: column;
+  }
+  .home__sectionSecond-label {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 327px;
+    margin-bottom: 30px;
+  }
+  .home__sectionSecond-bg1 {
+    top: 0;
+  }
+  .home__sectionThird {
+    height: 1410px;
+    padding: 140px 24px;
+  }
+  .home__sectionThird-text-container > h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .home__sectionThird-reviews-container {
+    flex-direction: column;
+  }
+  .home__sectionThird-review {
+    margin-top: 39px;
+    width: 327px;
+    padding: 4px 0;
+    padding-bottom: 12px;
+    margin-bottom: 29px;
+  }
+  .home__sectionFourth-text-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: unset;
+    align-items: center;
+  }
+  .home__sectionFourth-text-container > h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .home__sectionFourth {
+    height: 302px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .home__sectionFourth-bg1 {
+    bottom: -22px;
+  }
+  footer {
+    height: 432px;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__left > nav {
+    width: 100%;
+    justify-content: center;
+    margin: 24px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__left > nav li {
+    margin: 0 15px;
+  }
+  .footer__right {
+    align-items: center;
+  }
+  .footer__right-icons-container {
+    margin: 24px 0;
   }
 }
