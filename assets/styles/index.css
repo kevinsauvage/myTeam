@@ -219,6 +219,7 @@ header {
 }
 .home__sectionThird-reviews-container {
   display: flex;
+  justify-content: center;
 }
 .home__sectionThird-review-name {
   margin: 24px 0 32px 0;
@@ -336,7 +337,7 @@ footer {
   display: flex;
   width: 40%;
   justify-content: space-between;
-  margin-top: 24px;
+  margin-top: 34px;
 }
 .footer__middle {
   font-weight: 600;
