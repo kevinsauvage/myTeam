@@ -157,6 +157,9 @@ header {
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
+.iconRotate {
+  transform: rotate(45deg);
+}
 .about__team-btn:hover {
   background-color: #79c8c7;
 }
