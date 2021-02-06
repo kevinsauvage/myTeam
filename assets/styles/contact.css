@@ -3,7 +3,6 @@ body {
   background: #002529;
 }
 /* First section */
-
 .contact__sectionFirst {
   background-color: #014e56;
   position: relative;
@@ -75,7 +74,6 @@ header {
   font-size: 64px;
   line-height: 100px;
 }
-
 .contact__sectionFirst-text > h2 {
   font-weight: bold;
   font-size: 32px;
@@ -158,7 +156,6 @@ header {
   outline: none;
 }
 /*  footer  */
-
 footer {
   background: #002529;
   display: flex;
@@ -240,7 +237,6 @@ footer {
     margin-top: 20px;
   }
 }
-
 @media (min-width: 320px) and (max-width: 480px) {
   header {
     align-items: center;

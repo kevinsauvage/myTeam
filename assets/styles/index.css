@@ -458,9 +458,6 @@ footer {
     overflow: hidden;
   }
 }
-@media (min-width: 481px) and (max-width: 767px) {
-}
-
 @media (min-width: 320px) and (max-width: 480px) {
   .home__sectionFirst-text {
     flex-direction: column;
@@ -494,6 +491,7 @@ footer {
     position: fixed;
     transition: all 0.3s ease-in-out;
   }
+
   .header__left {
     flex-direction: column;
   }
