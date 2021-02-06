@@ -25,6 +25,15 @@ header {
   left: 0px;
   right: 0px;
 }
+.hamburger__menu {
+  display: none;
+}
+.icon__hamburger-menu-close {
+  display: none;
+}
+.logo__small-screen {
+  display: none;
+}
 .header__left {
   display: flex;
   align-items: center;
@@ -92,7 +101,6 @@ header {
   right: -100px;
   bottom: 0;
 }
-
 /* Section two about page */
 .about__sectionThird {
   position: relative;
@@ -147,12 +155,14 @@ header {
   font-weight: 800;
   z-index: 20;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 }
-
+.iconRotate {
+  transform: rotate(45deg);
+}
 .about__team-btn:hover {
   background-color: #79c8c7;
 }
-
 .about__team-card-hover {
   position: absolute;
   width: 100%;
@@ -305,7 +315,7 @@ footer {
   display: flex;
   width: 40%;
   justify-content: space-between;
-  margin-top: 24px;
+  margin-top: 34px;
 }
 .footer__middle {
   font-weight: 600;
@@ -333,4 +343,224 @@ footer {
 .footer__right-icons-container img {
   margin-left: 16px;
   cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    top: 30px;
+    max-width: 680px;
+    width: 680px;
+    right: 50%;
+    z-index: 50;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer__left {
+    width: 230px;
+  }
+  .footer__right {
+    width: 262px;
+  }
+  footer {
+    padding: 0px 80px;
+  }
+  .about__sectionFirst-text {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__sectionFirst-text > h1 {
+    width: unset;
+  }
+  .about__sectionFirst-text > p {
+    width: 540px;
+    text-align: center;
+  }
+  .about__sectionFirst-text > p::after {
+    display: none;
+  }
+  .about__team-wrapper {
+    display: flex;
+  }
+  .about__team-cards {
+    flex-wrap: wrap;
+  }
+  .about__team-card {
+    width: 281px;
+  }
+  .about__team-container > h2 {
+    font-size: 32px;
+  }
+  .about__sectionThird-client {
+    max-width: 594px;
+    width: 594px;
+  }
+  .about__sectionThird-client img {
+    height: 17px;
+  }
+  .about__sectionThird > h2 {
+    font-size: 32px;
+  }
+  .about__sectionFourth-text-container {
+    max-width: 573px;
+    width: 573px;
+  }
+  .about__sectionFourth-text-container > h3 {
+    font-size: 32px;
+  }
+  .about__sectionFourth-bg1 {
+    bottom: -20px;
+  }
+  .about__sectionFourth {
+    overflow: hidden;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    align-items: center;
+    flex-direction: column;
+    top: 0px;
+    background-color: #2c6269;
+    height: 100vh;
+    justify-content: center;
+    z-index: 100;
+    left: unset;
+    right: -101%;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+  }
+  .header__left {
+    flex-direction: column;
+  }
+  .header__left > img {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+  }
+  .header__left > nav {
+    flex-direction: column;
+  }
+  .header__left > nav li {
+    margin: 16px 0;
+  }
+  .header__right {
+    margin: 31px 0;
+  }
+  .hamburger__menu {
+    display: inline;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 10;
+  }
+  .icon__hamburger-menu-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: inline;
+  }
+  .logo__small-screen {
+    position: absolute;
+    display: inline;
+    left: 10px;
+    top: 8px;
+  }
+  .about__sectionFirst-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about__sectionFirst-text > h1 {
+    font-size: 40px;
+  }
+  .about__sectionFirst-text > p {
+    width: 327px;
+    font-size: 15px;
+  }
+  .about__sectionFirst-text > p::after {
+    display: none;
+  }
+  .about__sectionFirst-text > p {
+    padding-top: 0;
+  }
+  .about__sectionFirst-bg1 {
+    bottom: -100px;
+  }
+  .about__sectionSecond-bg1 {
+    left: -100px;
+    top: -100px;
+  }
+  .about__team-container {
+    min-height: 2062px;
+    padding: 168px 24px;
+    overflow: hidden;
+  }
+  .about__team-cards {
+    flex-direction: column;
+    margin-bottom: unset;
+  }
+  .about__team-container > h2 {
+    font-size: 32px;
+  }
+  .about__sectionThird {
+    height: 632px;
+    overflow: hidden;
+  }
+  .about__sectionThird-client {
+    align-items: center;
+    flex-direction: column;
+    width: unset;
+  }
+  .about__sectionThird-bg1 {
+    left: -100px;
+    top: -100px;
+  }
+  .about__sectionThird > h2 {
+    font-size: 32px;
+  }
+  .about__sectionThird-client img {
+    margin: 20px 0;
+  }
+  .about__sectionFourth-text-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: unset;
+    align-items: center;
+  }
+  .about__sectionFourth-text-container > h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .about__sectionFourth {
+    height: 302px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .about__sectionFourth-bg1 {
+    bottom: -22px;
+  }
+  footer {
+    height: 432px;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__left > nav {
+    width: 100%;
+    justify-content: center;
+    margin: 24px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__left > nav li {
+    margin: 0 15px;
+  }
+  .footer__right {
+    align-items: center;
+  }
+  .footer__right-icons-container {
+    margin: 24px 0;
+  }
 }
