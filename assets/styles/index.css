@@ -471,7 +471,9 @@ footer {
     flex-direction: column;
   }
 
-
+  .home__sectionSecond-label-container {
+    width: 100%;
+  }
 
   .home__sectionSecond {
     padding: 100px 0;
