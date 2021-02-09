@@ -321,7 +321,7 @@ header {
 
 .home__sectionFourth-text-container {
   max-width: 947px;
-  width: 917px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -418,7 +418,7 @@ footer {
   cursor: pointer;
 }
 
-@media (min-width: 768px) and (max-width: 1234px) {
+@media (min-width: 785px) and (max-width: 1284px) {
   .home__sectionFirst-bg1 {
     display: none;
   }
@@ -548,7 +548,7 @@ footer {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 784px) {
   .home__sectionFirst-text {
     flex-direction: column;
     align-items: center;
@@ -600,6 +600,7 @@ footer {
 
   .header__left>nav {
     flex-direction: column;
+    align-items: center;
   }
 
   .header__left>nav li {

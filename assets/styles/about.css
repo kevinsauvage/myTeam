@@ -270,7 +270,7 @@ header {
   display: flex;
   justify-content: space-between;
   max-width: 1110px;
-  width: 1110px;
+  width: 100%;
 }
 
 .about__sectionThird-client img {
@@ -296,7 +296,7 @@ header {
 
 .about__sectionFourth-text-container {
   max-width: 947px;
-  width: 917px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -393,7 +393,7 @@ footer {
   cursor: pointer;
 }
 
-@media (min-width: 773px) and (max-width: 1284px) {
+@media (min-width: 785px) and (max-width: 1284px) {
   header {
     top: 30px;
     max-width: 717px;
@@ -491,13 +491,14 @@ footer {
   }
 }
 
-@media (min-width: 320px) and (max-width: 772px) {
+@media (min-width: 320px) and (max-width: 784px) {
   header {
     align-items: center;
     flex-direction: column;
     top: 0px;
     background-color: #2c6269;
     height: 100vh;
+    width: 100%;
     justify-content: center;
     z-index: 100;
     left: unset;
@@ -518,6 +519,7 @@ footer {
 
   .header__left>nav {
     flex-direction: column;
+    align-items: center;
   }
 
   .header__left>nav li {
