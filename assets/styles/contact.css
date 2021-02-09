@@ -2,12 +2,14 @@ body {
   min-height: 100vh;
   background: #002529;
 }
+
 /* First section */
 .contact__sectionFirst {
   background-color: #014e56;
   position: relative;
   overflow: hidden;
 }
+
 .contact__sectionFirst-wrapper {
   width: 100%;
   max-width: 1110px;
@@ -17,6 +19,7 @@ body {
   align-items: center;
   position: relative;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -27,21 +30,26 @@ header {
   left: 0px;
   right: 0px;
 }
+
 .hamburger__menu {
   display: none;
 }
+
 .icon__hamburger-menu-close {
   display: none;
 }
+
 .logo__small-screen {
   display: none;
 }
+
 .header__left {
   display: flex;
   align-items: center;
   width: 380px;
   justify-content: space-between;
 }
+
 .header__left > nav {
   display: flex;
   width: 140px;
@@ -49,6 +57,7 @@ header {
   font-size: 18px;
   font-weight: 600;
 }
+
 .header__right > a {
   border: 1px solid white;
   border-radius: 25px;
@@ -58,38 +67,46 @@ header {
   line-height: 28px;
   transition: all 0.3s ease-in;
 }
+
 .header__right > a:hover {
   background-color: white;
   border: 1p solid #012f34;
   color: #012f34;
 }
+
 .contact__sectionFirst-text-wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 50px;
 }
+
 .contact__sectionFirst-text > h1 {
   font-weight: bold;
   font-size: 64px;
   line-height: 100px;
 }
+
 .contact__sectionFirst-text > h2 {
   font-weight: bold;
   font-size: 32px;
   line-height: 48px;
   color: #f67e7e;
 }
+
 .contact__sectionFirst-text > div {
   margin-top: 50px;
 }
+
 .contact__sectionFirst-label {
   display: flex;
   align-items: center;
 }
+
 .contact__sectionFirst-label img {
   margin-right: 23px;
 }
+
 .contact__sectionFirst-bg1 {
   position: absolute;
   width: 200px;
@@ -97,22 +114,26 @@ header {
   left: -100px;
   top: 250px;
 }
+
 .contact__sectionFirst-bg2 {
   position: absolute;
   right: -100px;
   bottom: 0;
 }
+
 .contact__sectionFirst-form {
   width: 50%;
   flex-direction: column;
   display: flex;
   justify-content: space-evenly;
 }
+
 .contact__sectionFirst-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .contact__sectionFirst-form > button {
   font-weight: 600;
   font-size: 18px;
@@ -124,25 +145,30 @@ header {
   border: none;
   cursor: pointer;
 }
+
 .contact__sectionFirst-form-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
 }
+
 .contact__sectionFirst-form-wrapper input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid white;
   width: 100%;
 }
+
 .contact__sectionFirst-form-wrapper input:focus {
   outline: none;
   border-bottom: 1px solid #79c8c7;
 }
+
 .contact__sectionFirst-form-wrapper:last-child > input {
   height: 50px;
 }
+
 .contact__sectionFirst-form-wrapper label {
   font-weight: 600;
   font-size: 15px;
@@ -152,9 +178,11 @@ header {
   opacity: 0.6;
   width: 100%;
 }
+
 .submit-form-btn:focus {
   outline: none;
 }
+
 /*  footer  */
 footer {
   background: #002529;
@@ -163,21 +191,25 @@ footer {
   height: 196px;
   align-items: center;
 }
+
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 1110px;
 }
+
 .footer__left {
   width: 285px;
 }
+
 .footer__left > nav {
   display: flex;
   width: 40%;
   justify-content: space-between;
   margin-top: 34px;
 }
+
 .footer__middle {
   font-weight: 600;
   font-size: 15px;
@@ -186,12 +218,14 @@ footer {
   opacity: 0.6;
   flex-grow: 2;
 }
+
 .footer__right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
 }
+
 .footer__right > p {
   line-height: 25px;
   text-align: right;
@@ -201,6 +235,7 @@ footer {
   font-weight: 600;
   font-size: 15px;
 }
+
 .footer__right-icons-container img {
   margin-left: 16px;
   cursor: pointer;
@@ -216,27 +251,34 @@ footer {
     left: 50%;
     transform: translateX(-50%);
   }
+
   .footer__left {
     width: 230px;
   }
+
   .footer__right {
     width: 262px;
   }
+
   footer {
     padding: 0px 80px;
   }
+
   .contact__sectionFirst-text-wrapper {
     flex-direction: column;
     align-items: center;
   }
+
   .contact__sectionFirst-text {
     margin-bottom: 50px;
     text-align: center;
   }
+
   .contact__sectionFirst-form > button {
     margin-top: 20px;
   }
 }
+
 @media (min-width: 320px) and (max-width: 480px) {
   header {
     align-items: center;
@@ -251,23 +293,29 @@ footer {
     position: fixed;
     transition: all 0.3s ease-in-out;
   }
+
   .header__left {
     flex-direction: column;
   }
+
   .header__left > img {
     position: absolute;
     top: 8px;
     left: 15px;
   }
+
   .header__left > nav {
     flex-direction: column;
   }
+
   .header__left > nav li {
     margin: 16px 0;
   }
+
   .header__right {
     margin: 31px 0;
   }
+
   .hamburger__menu {
     display: inline;
     position: absolute;
@@ -275,54 +323,67 @@ footer {
     top: 15px;
     z-index: 10;
   }
+
   .icon__hamburger-menu-close {
     position: absolute;
     top: 15px;
     right: 15px;
     display: inline;
   }
+
   .logo__small-screen {
     position: absolute;
     display: inline;
     left: 10px;
     top: 8px;
   }
+
   .contact__sectionFirst-text-wrapper {
     flex-direction: column;
     align-items: center;
   }
+
   .contact__sectionFirst-bg1 {
     display: none;
   }
+
   .contact__sectionFirst-bg2 {
     bottom: -100px;
   }
+
   .contact__sectionFirst-text {
     width: 327px;
   }
+
   .contact__sectionFirst-wrapper {
     height: 1132px;
   }
+
   .contact__sectionFirst-form {
     width: 327px;
     height: 420px;
     margin: 50px 0;
   }
+
   .contact__sectionFirst-text > h1 {
     font-size: 40px;
     text-align: center;
   }
+
   .contact__sectionFirst-text > h2 {
     text-align: center;
   }
+
   footer {
     height: 432px;
   }
+
   .footer__wrapper {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .footer__left > nav {
     width: 100%;
     justify-content: center;
@@ -330,12 +391,15 @@ footer {
     align-items: center;
     text-align: center;
   }
+
   .footer__left > nav li {
     margin: 0 15px;
   }
+
   .footer__right {
     align-items: center;
   }
+
   .footer__right-icons-container {
     margin: 24px 0;
   }
