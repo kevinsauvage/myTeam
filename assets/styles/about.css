@@ -502,7 +502,9 @@ footer {
     justify-content: center;
     z-index: 100;
     left: unset;
-    right: -101%;
+    right: 0px;
+    transform: scale(0);
+    transform-origin: top right;
     position: fixed;
     transition: all 0.3s ease-in-out;
   }

@@ -21,4 +21,5 @@ a:hover {
 
 .menu__open {
   right: 0;
+  transform: scale(1);
 }
