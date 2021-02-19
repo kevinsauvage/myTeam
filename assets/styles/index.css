@@ -171,6 +171,10 @@ header {
   margin-right: 23px;
 }
 
+.home__sectionSecond-label:first-child img {
+  margin-right: 30px;
+}
+
 .home__sectionSecond-label-text-container h2 {
   font-family: Livvic;
   font-style: normal;
