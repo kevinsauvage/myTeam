@@ -20,60 +20,6 @@ body {
   position: relative;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 48px;
-  position: absolute;
-  top: 73px;
-  left: 0px;
-  right: 0px;
-}
-
-.hamburger__menu {
-  display: none;
-}
-
-.icon__hamburger-menu-close {
-  display: none;
-}
-
-.logo__small-screen {
-  display: none;
-}
-
-.header__left {
-  display: flex;
-  align-items: center;
-  width: 380px;
-  justify-content: space-between;
-}
-
-.header__left > nav {
-  display: flex;
-  width: 140px;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.header__right > a {
-  border: 1px solid white;
-  border-radius: 25px;
-  padding: 10px 32.5px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
-  transition: all 0.3s ease-in;
-}
-
-.header__right > a:hover {
-  background-color: white;
-  border: 1p solid #012f34;
-  color: #012f34;
-}
-
 .contact__sectionFirst-text-wrapper {
   display: flex;
   justify-content: space-between;
@@ -81,20 +27,20 @@ header {
   margin-top: 50px;
 }
 
-.contact__sectionFirst-text > h1 {
+.contact__sectionFirst-text>h1 {
   font-weight: bold;
   font-size: 64px;
   line-height: 100px;
 }
 
-.contact__sectionFirst-text > h2 {
+.contact__sectionFirst-text>h2 {
   font-weight: bold;
   font-size: 32px;
   line-height: 48px;
   color: #f67e7e;
 }
 
-.contact__sectionFirst-text > div {
+.contact__sectionFirst-text>div {
   margin-top: 50px;
 }
 
@@ -105,6 +51,10 @@ header {
 
 .contact__sectionFirst-label img {
   margin-right: 23px;
+}
+
+.contact__sectionFirst-label:first-child img {
+  margin-left: 5px;
 }
 
 .contact__sectionFirst-bg1 {
@@ -134,7 +84,7 @@ header {
   justify-content: space-between;
 }
 
-.contact__sectionFirst-form > button {
+.contact__sectionFirst-form>button {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -165,7 +115,7 @@ header {
   border-bottom: 1px solid #79c8c7;
 }
 
-.contact__sectionFirst-form-wrapper:last-child > input {
+.contact__sectionFirst-form-wrapper:last-child>input {
   height: 50px;
 }
 
@@ -183,87 +133,7 @@ header {
   outline: none;
 }
 
-/*  footer  */
-footer {
-  background: #002529;
-  display: flex;
-  justify-content: center;
-  height: 196px;
-  align-items: center;
-}
-
-.footer__wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1110px;
-}
-
-.footer__left {
-  width: 285px;
-}
-
-.footer__left > nav {
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
-  margin-top: 34px;
-}
-
-.footer__middle {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 25px;
-  mix-blend-mode: normal;
-  opacity: 0.6;
-  flex-grow: 2;
-}
-
-.footer__right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.footer__right > p {
-  line-height: 25px;
-  text-align: right;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.6;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.footer__right-icons-container img {
-  margin-left: 16px;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  header {
-    top: 30px;
-    max-width: 680px;
-    width: 680px;
-    right: 50%;
-    z-index: 50;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .footer__left {
-    width: 230px;
-  }
-
-  .footer__right {
-    width: 262px;
-  }
-
-  footer {
-    padding: 0px 80px;
-  }
-
+@media (min-width: 785px) and (max-width: 1284px) {
   .contact__sectionFirst-text-wrapper {
     flex-direction: column;
     align-items: center;
@@ -274,70 +144,12 @@ footer {
     text-align: center;
   }
 
-  .contact__sectionFirst-form > button {
+  .contact__sectionFirst-form>button {
     margin-top: 20px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  header {
-    align-items: center;
-    flex-direction: column;
-    top: 0px;
-    background-color: #2c6269;
-    height: 100vh;
-    justify-content: center;
-    z-index: 100;
-    left: unset;
-    right: -101%;
-    position: fixed;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .header__left {
-    flex-direction: column;
-  }
-
-  .header__left > img {
-    position: absolute;
-    top: 8px;
-    left: 15px;
-  }
-
-  .header__left > nav {
-    flex-direction: column;
-  }
-
-  .header__left > nav li {
-    margin: 16px 0;
-  }
-
-  .header__right {
-    margin: 31px 0;
-  }
-
-  .hamburger__menu {
-    display: inline;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    z-index: 10;
-  }
-
-  .icon__hamburger-menu-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    display: inline;
-  }
-
-  .logo__small-screen {
-    position: absolute;
-    display: inline;
-    left: 10px;
-    top: 8px;
-  }
-
+@media (min-width: 320px) and (max-width: 784px) {
   .contact__sectionFirst-text-wrapper {
     flex-direction: column;
     align-items: center;
@@ -365,42 +177,12 @@ footer {
     margin: 50px 0;
   }
 
-  .contact__sectionFirst-text > h1 {
+  .contact__sectionFirst-text>h1 {
     font-size: 40px;
     text-align: center;
   }
 
-  .contact__sectionFirst-text > h2 {
+  .contact__sectionFirst-text>h2 {
     text-align: center;
-  }
-
-  footer {
-    height: 432px;
-  }
-
-  .footer__wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer__left > nav {
-    width: 100%;
-    justify-content: center;
-    margin: 24px 0;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer__left > nav li {
-    margin: 0 15px;
-  }
-
-  .footer__right {
-    align-items: center;
-  }
-
-  .footer__right-icons-container {
-    margin: 24px 0;
   }
 }
